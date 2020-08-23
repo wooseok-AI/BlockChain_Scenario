@@ -64,12 +64,3 @@ class BlockChain:
             i+=1
         return True
     
-    
-    
-if __name__ == "__main__":
-    onion = BlockChain()
-    onion.addBlock(data = "WOW")
-    print(json.dumps(vars(onion.chain[0]), indent = 4))
-    print(json.dumps(vars(onion.chain[1]), indent = 4))
-    print(onion.isValid())
-    

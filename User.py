@@ -262,17 +262,3 @@ class Transaction():
 class key():
     def __init__(self):
         pass
-    
-    
-if __name__ == '__main__':
-    u1 = Account(123)
-    u2 = Account(456)
-    u1.save_Equipment(10)
-    u2.save_Equipment(10)
-    u1.save_Balance(1000)
-    u2.save_Balance(1000)
-    data = {u1.Userid :  250, u2.Userid :  500}
-    inventory = {u1.Userid : 2 , u2.Userid : 5}
-    u1_u2_pc, tx1, tx2 = u1.createPC(data, inventory)
-    PC = {}
-    PC[u1_u2_pc.id] = u1_u2_pc
